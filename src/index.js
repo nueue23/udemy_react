@@ -12,6 +12,7 @@ import BooksContext from './context/books';
 import { Provider } from './context/books';*/
 
 import AppCustomComponents from './customComponents/AppCustomComponents';
+import {NavigationProvider} from './context/navigation';
 
 const el = document.getElementById("root");
 const root = ReactDOM.createRoot(el);
@@ -25,4 +26,6 @@ const root = ReactDOM.createRoot(el);
 /*root.render(<Provider>
     <AppBooks />
 </Provider>)*/
-root.render(<AppCustomComponents />);
+root.render(<NavigationProvider>
+        <AppCustomComponents />
+    </NavigationProvider>);
