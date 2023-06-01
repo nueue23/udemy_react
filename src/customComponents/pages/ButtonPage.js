@@ -1,4 +1,4 @@
-import Button from './comps/Button';
+import Button from '../comps/Button';
 import {GoBell, GoCloudDownload, GoDatabase} from "react-icons/go";
 function ButtonPage(){
     const handleClick = ()=>{

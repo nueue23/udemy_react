@@ -1,4 +1,4 @@
-import DropDown from "./comps/Dropdown";
+import DropDown from "../comps/Dropdown";
 import { useState } from "react";
 function DropdownPage(){
     const [selectedOption, setSelectedOption] = useState(null);
