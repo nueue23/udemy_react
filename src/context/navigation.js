@@ -20,7 +20,6 @@ function NavigationProvider({children}){
         setCurrentPath(to);
     };
     return <NavigationContext.Provider value={{currentPath, navigate}}>
-        {currentPath}
         {children}
     </NavigationContext.Provider>
 }
