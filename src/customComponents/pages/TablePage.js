@@ -1,4 +1,4 @@
-import Table from "../comps/Table";
+import SortableTable from "../comps/SortableTable";
 
 function TablePage(){
     const data = [
@@ -17,13 +17,12 @@ function TablePage(){
         },
         {   label:'Sort',
             render: (fruit) => fruit.score,
-            header: () => <th className="bg-red-500">Score</th>,
             sortValue: (fruit) => fruit.score
         }
     ];
     const keyFn = (fruit) => {
         return fruit.name;
     };
-    return <Table data={data} config={config} keyFn={keyFn} />
+    return <SortableTable data={data} config={config} keyFn={keyFn} />
 }
 export default TablePage;
