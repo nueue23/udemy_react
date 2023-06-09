@@ -4,6 +4,7 @@ import AccordionPage from "./pages/AccordionPage";
 import DropdownPage from "./pages/DropdownPage";
 import Sidebar from "./comps/Sidebar";
 import ModalPage from "./pages/ModalPage";
+import TablePage from "./pages/TablePage";
 function AppCustomComponents(){
     return (<div className="container mx-auto grid grid-cols-6 gap-4 mt-4" >
         <Sidebar />
@@ -19,6 +20,9 @@ function AppCustomComponents(){
             </Route>
             <Route path="/modal">
                 <ModalPage />
+            </Route>
+            <Route path="/table">
+                <TablePage />
             </Route>
             <Route path="/">
                 <DropdownPage />

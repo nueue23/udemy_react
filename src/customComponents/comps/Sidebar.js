@@ -4,7 +4,8 @@ const links = [
     {label:'Dropdown', path:'/dropdown'},
     {label: 'Accordion', path:'/accordion'},
     {label: 'Button', path:'/button'},
-    {label: 'Modal', path:'/modal'}
+    {label: 'Modal', path:'/modal'},
+    {label: 'Table', path:'/table'}
 ];
 const renderedLinks = links.map(link => {
     return <Link key={link.label} 
