@@ -5,6 +5,7 @@ import DropdownPage from "./pages/DropdownPage";
 import Sidebar from "./comps/Sidebar";
 import ModalPage from "./pages/ModalPage";
 import TablePage from "./pages/TablePage";
+import CounterPage from "./pages/CounterPage";
 function AppCustomComponents(){
     return (<div className="container mx-auto grid grid-cols-6 gap-4 mt-4" >
         <Sidebar />
@@ -23,6 +24,9 @@ function AppCustomComponents(){
             </Route>
             <Route path="/table">
                 <TablePage />
+            </Route>
+            <Route path="/counter">
+                <CounterPage initialCount={5} />
             </Route>
             <Route path="/">
                 <DropdownPage />
