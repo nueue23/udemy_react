@@ -3,29 +3,14 @@ import './customComponents/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-/*import App from './App';
-import AppAnimal from './AppAnimal';
-import AppApi from './apis/AppApi';
-import AppBooks from './books/AppBooks';
-
-import BooksContext from './context/books';
-import { Provider } from './context/books';*/
-
-import AppCustomComponents from './customComponents/AppCustomComponents';
-import {NavigationProvider} from './context/navigation';
+import AppPlaylist from './playlist/AppPlaylist';
+import { Provider } from 'react-redux';
+import {store} from './playlist/store';
 
 const el = document.getElementById("root");
 const root = ReactDOM.createRoot(el);
 
-//root.render(<App />);
-//root.render(<AppAnimal />);
-//root.render(<AppApi />);
-/*root.render(<BooksContext.Provider value={5}>
-        <AppBooks />
-    </BooksContext.Provider>);*/
-/*root.render(<Provider>
-    <AppBooks />
-</Provider>)*/
-root.render(<NavigationProvider>
-        <AppCustomComponents />
-    </NavigationProvider>);
+root.render(<Provider store={store}>
+        <AppPlaylist />
+    </Provider>);
+
