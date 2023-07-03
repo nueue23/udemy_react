@@ -4,5 +4,37 @@
       "title": "yo yo honey singh",
       "id": 1
     }
-  ]
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Nina Emard",
+      "id": 2
+    },
+    {
+      "name": "Dwayne Johns",
+      "id": 3
+    },
+    {
+      "name": "Lola Kautzer DDS",
+      "id": 4
+    },
+    {
+      "name": "Christine Cummerata",
+      "id": 5
+    },
+    {
+      "name": "Marlon Wiza-Bernier",
+      "id": 6
+    },
+    {
+      "name": "Charlotte Cormier",
+      "id": 7
+    }
+  ],
+  "albums": [],
+  "photos": []
 }
