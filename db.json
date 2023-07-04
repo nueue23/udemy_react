@@ -7,34 +7,20 @@
   ],
   "users": [
     {
-      "id": 1,
-      "name": "Myra"
-    },
-    {
-      "name": "Nina Emard",
-      "id": 2
-    },
-    {
-      "name": "Dwayne Johns",
-      "id": 3
-    },
-    {
-      "name": "Lola Kautzer DDS",
-      "id": 4
-    },
-    {
-      "name": "Christine Cummerata",
+      "name": "Mrs. Madeline Bergstrom",
       "id": 5
     },
     {
-      "name": "Marlon Wiza-Bernier",
+      "name": "Dr. Edmund Hermiston",
       "id": 6
-    },
-    {
-      "name": "Charlotte Cormier",
-      "id": 7
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id" : 1,
+      "title" : "Pretty Woman",
+      "userId" : 5
+    }
+  ],
   "photos": []
 }
