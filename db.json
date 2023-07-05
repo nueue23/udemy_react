@@ -17,10 +17,31 @@
   ],
   "albums": [
     {
-      "id" : 1,
-      "title" : "Pretty Woman",
-      "userId" : 5
+      "id": 1,
+      "title": "Pretty Woman",
+      "userId": 5
+    },
+    {
+      "userId": 6,
+      "title": "Handcrafted Cotton Mouse",
+      "id": 5
+    },
+    {
+      "userId": 6,
+      "title": "Incredible Concrete Keyboard",
+      "id": 6
+    },
+    {
+      "userId": 5,
+      "title": "Bespoke Frozen Sausages",
+      "id": 8
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "url": "https://loremflickr.com/150/150/abstract?lock=7144711137525760",
+      "albumId": 6,
+      "id": 2
+    }
+  ]
 }
