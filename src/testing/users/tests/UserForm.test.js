@@ -18,7 +18,13 @@ test('it calls onSubmit when the form is submitted', ()=>{
     render(<UserForm onSubmit={callback} />);*/
     const mock = jest.fn();
     render(<UserForm onSubmit={mock} />);
-    const [nameInput, emailInput] = screen.getAllByRole('textbox');
+    //const [nameInput, emailInput] = screen.getAllByRole('textbox');
+    const nameInput = screen.getByRole('textbox', {
+        name: /name/i
+    });
+    const emailInput = screen.getByRole('textbox', {
+        name: /email/i
+    });
     user.click(nameInput);
     user.keyboard('Jane');
     user.click(emailInput);
@@ -37,6 +43,23 @@ test('it calls onSubmit when the form is submitted', ()=>{
         name: 'Jane',
         email: 'Jane@test.com'
     });
+});
 
-    
+test('it emties the two inputs when form is submitted', ()=>{
+    render(<UserForm onSubmit={() => {}} />);
+    const nameInput = screen.getByRole('textbox', {
+        name: /name/i
+    });
+    const emailInput = screen.getByRole('textbox', {
+        name: /email/i
+    });
+    user.click(nameInput);
+    user.keyboard('Jane');
+    user.click(emailInput);
+    user.keyboard('Jane@test.com');
+    const button = screen.getByRole('button');
+    user.click(button);
+
+    expect(nameInput).toHaveValue('');
+    expect(emailInput).toHaveValue('');
 });
