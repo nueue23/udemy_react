@@ -12,7 +12,7 @@ function UserForm({onSubmit}){
         setName('');
         setEmail('');
     }
-    return <form onSubmit={handleSubmit}>
+    return <form onSubmit={handleSubmit} aria-label="form">
             <div>
                 <label htmlFor="name">Name</label>
                 <input id="name" value={name} onChange={e => setName(e.target.value) } />

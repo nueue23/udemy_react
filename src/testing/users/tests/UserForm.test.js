@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import user from "@testing-library/user-event";
 import UserForm from "../UserForm";
+import {toContainRole} from "./customMatcher";
 
 test('it shows two inputs and a button', ()=>{
     render(<UserForm />);
@@ -62,4 +63,10 @@ test('it emties the two inputs when form is submitted', ()=>{
 
     expect(nameInput).toHaveValue('');
     expect(emailInput).toHaveValue('');
+});
+
+test('expect form to have one button', ()=>{
+    render(<UserForm />);
+    const form = screen.getByRole('form');
+    expect(form).toContainRole('button');
 });
